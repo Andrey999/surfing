@@ -1,0 +1,60 @@
+@import 'mixin';
+.header {}
+
+// slider buttons arrows
+.slider__arrows {
+  position: absolute;
+  z-index: 4;
+  top: 40px;
+  right: 80px;
+  cursor: pointer;
+
+  &.slider__arrows-left {
+    right: 125px;
+  }
+} 
+
+
+//  slider
+.header__slider {
+
+  &-item {
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &-info {
+    position: absolute;
+    right: 80px;
+    bottom: 116px; 
+    text-align: right;
+    color: #fff;
+    text-transform: uppercase;
+
+    &-title {
+      font-weight: 800;
+      font-size: 80px;
+      line-height: 86px;
+      margin-top: 5px;
+      margin-bottom: 48px;
+    }
+
+    &-text {
+      margin-top: 8px;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .subtitle-left {
+    @include lineLeft;
+  }
+
+
+}
