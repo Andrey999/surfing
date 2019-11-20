@@ -25,6 +25,7 @@ const plumberOptions = {
 const sassAllFiles = [
     'node_modules/normalize.css/normalize.css',
     'node_modules/wowjs/css/libs/animate.css',
+    'node_modules/slick-carousel/slick/slick.css',
     './src/scss/style.scss'
 ];
 
@@ -35,7 +36,7 @@ function sassStyles() {
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(concat('all.css')) // конкатенация файлов в один
         .pipe(autoprefixer({
-            browsers: ['> 0.1%'], // браузеры которые используются больше 0.1%
+            overrideBrowserlist: ['> 0.1%'], // браузеры которые используются больше 0.1%
             cascade: false
         }))
         .pipe(cleanCSS({ level: 2 })) // сжатие стилей
@@ -48,6 +49,7 @@ function sassStyles() {
 const jsFiles = [
     'node_modules/jquery/dist/jquery.js',
     'node_modules/wowjs/dist/wow.js',
+    'node_modules/slick-carousel/slick/slick.js',
     './src/js/main.js'
 ];
 
