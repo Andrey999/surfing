@@ -2,9 +2,9 @@
 @import "fonts.scss";
 @import "mixin";
 
-// @import "./layouts/";
+@import "./layouts/header";
 
-
+// base styles
 h1, h2, p {
 	margin: 0;
 	padding: 0;
@@ -18,20 +18,14 @@ ul, li {
 
 a {
 	text-decoration: none;
+	display: inline-block; 	
 }
 
 body {
   @include regular;
-  font-size: 16px;
+  font-size: 22px;
 	box-sizing: border-box;
 	overflow-x: hidden;
-}
-
-.container {
-	width: 1500px;
-	max-width: 1500px;
-	margin: auto;
-	padding: 0 20px;
 }
 
 @import "./media.scss";
