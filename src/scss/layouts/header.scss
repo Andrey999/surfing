@@ -25,10 +25,13 @@
   border-right: 1px solid rgba(#fff, .25);
   height: 100vh;
   text-align: center;
+  color: #fff;
 }
 
 // navigation 
 .menu {
+  padding-top: 18px;
+
   &__list {
    &-item {
      a {
@@ -38,35 +41,73 @@
          display: block;
          font-weight: 500;
          font-size: 12px;
-         line-height: 14px;
          letter-spacing: 3px;
          color: #fff;
          padding-top: 6px;
-         margin-bottom: 37px;
+         margin-bottom: 20px;
        }
      }
    }
   }
 }
 
-//header  date
-.header__date {
 
+//header  search
+.header__search {
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
 
 
+//header  date
+.header__date {
+  h2 {
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 64px;
+    // text-transform: uppercase;
+  }
+
+  span {
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1.4px;
+  }
+} 
+
+// header  location
+.header__location {
+  padding-top: 15px;
+
+  p {
+    position: relative;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.05px;
+    padding-left: 19px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 11px;
+      height: 13px;
+      background-image: url(../img/location.svg);
+    }
+  }
+}
 
 
-
-
-
-
-
-
-
-
-
-
+// header  map
+.header__map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
 
 
 
@@ -135,6 +176,7 @@
   max-width: 920px;
   width: 100%;
   color: #fff;
+  z-index: 5;
 
   .slick-current {
     .dots__container-item {
@@ -167,4 +209,12 @@
       }
     }
   }
+}
+
+
+// arrow down
+.header__arrow-down {
+  position: absolute;
+  bottom: 40px;
+  left: 209px;
 }
