@@ -24,7 +24,7 @@ const plumberOptions = {
 //  записываем в переменную какие css файлы будем обрабатывать
 const sassAllFiles = [
     'node_modules/normalize.css/normalize.css',
-    'node_modules/wowjs/css/libs/animate.css',
+    'node_modules/animate.css/animate.css',
     'node_modules/slick-carousel/slick/slick.css',
     './src/scss/style.scss'
 ];

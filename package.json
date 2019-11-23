@@ -26,6 +26,7 @@
     "node-sass": "^4.10.0"
   },
   "dependencies": {
+    "animate.css": "^3.7.2",
     "del": "^3.0.0",
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.0",
