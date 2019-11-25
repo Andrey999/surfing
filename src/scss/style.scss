@@ -3,9 +3,33 @@
 @import "mixin";
 
 @import "./layouts/header";
+@import "./layouts/surf";
+// @import "./layouts/travel";
+// @import "./layouts/sleep";
+// @import "./layouts/shop";
+// @import "./layouts/footer";
 
 // base styles
-h1, h2, p {
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+  @include regular;
+  font-size: 22px;
+	overflow-x: hidden;
+	background-color: #171919;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+h1, h2, h3, p {
 	margin: 0;
 	padding: 0;
 }
@@ -19,13 +43,69 @@ ul, li {
 a {
 	text-decoration: none;
 	display: inline-block; 	
+	color: #fff;
 }
 
-body {
-  @include regular;
-  font-size: 22px;
-	box-sizing: border-box;
-	overflow-x: hidden;
+.container {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+
+///////////   global  styles  /////////////
+
+// left line in all section
+.headline-left {
+	font-size: 22px;
+	line-height: 32px;
+	letter-spacing: 7.33333px;
+	text-transform: uppercase;
+	color: #fff;
+	opacity: 0.5;
+	padding-left: 103px;
+	position: relative;
+	display: inline-block;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 80px;
+		height: 1px;
+		background-color: #fff;
+		left: 0;
+		top: 50%;
+	}
+}
+
+// title in all section
+.all__title-section {
+	span {
+		position: relative;
+		font-weight: 800;
+		font-size: 200px;
+		color: rgba(#fff, .02);
+		display: inline-block;
+		transform: translateX(-50px);
+
+		h3 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-weight: 800;
+			font-size: 80px;
+			color: #fff;
+
+			&:before {
+				content: '';
+				width: 80px;
+				height: 1px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				background: #4AF6CD;
+			}
+		}
+	}
 }
 
 @import "./media.scss";
