@@ -4,8 +4,8 @@
 
 @import "./layouts/header";
 @import "./layouts/surf";
-// @import "./layouts/travel";
-// @import "./layouts/sleep";
+@import "./layouts/travel";
+@import "./layouts/sleep";
 // @import "./layouts/shop";
 // @import "./layouts/footer";
 
@@ -147,6 +147,65 @@ a {
 			height: 21px;
 		}
 	}
+}
+
+//  customize styles for input section sleep
+// .quantity {
+//   position: relative;
+// }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+	width: 36px;
+	height: 33px;
+	float: left;
+	display: block;
+	border: none;
+	background: transparent;
+	color: #fff;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: static;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+	font-size: 70px;
+	font-weight: 100;
+  line-height: 1.7;
+  transform: translateX(-100%);
+	user-select: none;
+	color: #4AF6CD;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+	top: 10px;
+  right: 25px;
+}
+
+.quantity-button.quantity-down {
+	position: absolute;
+	top: 9px;
+	left: 155px;
 }
 
 @import "./media.scss";
