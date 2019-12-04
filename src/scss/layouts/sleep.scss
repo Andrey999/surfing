@@ -1,0 +1,154 @@
+.sleep {
+  padding: 160px 0 260px;
+  background-image: url(../img/flower.png);
+  background-size: auto;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+
+  &__slider {
+    .slider__arrows {
+      top: 150px;
+      opacity: .25;
+    }
+  }
+}
+
+
+.sleep__slider-item {
+  &-head {
+    background-repeat: no-repeat;
+    background-position: top left;
+    min-height: 780px;
+
+    .surf__subtitle {
+      padding-top: 112px;
+    }
+  }
+}
+
+//  sleep  description
+.sleep__slider-description {
+  margin-top: -230px;
+  padding: 160px 0 0 132px;
+  min-height: 377px;
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  .sleep__company-description {
+    &-subtitle {
+      font-size: 22px;
+      line-height: 32px;
+      letter-spacing: 7.3px;
+      opacity: 0.5;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 145px;
+        width: 80px;
+        height: 1px;
+        background: #fff;
+      }
+    }
+
+    &-title {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 86px;
+      position: relative;
+
+      .sleep__star-list {
+        position: absolute;
+        top: 0;
+        left: 220px;
+        li {
+          display: inline-block;
+
+          img {
+            padding-left: 10px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+//  sleep  slider  info
+.sleep__slider-info {
+  display: flex;
+  padding: 0 140px 0 132px;
+  justify-content: space-between;
+
+  &-items {
+    min-height: 200px;
+    margin-bottom: 66px;
+    position: relative;
+
+    &:nth-child(2) .travel__slider-info-subtitle {
+      transform: rotate(-90deg) translate(-140px, 0);
+    }
+
+    &:nth-child(4) .travel__slider-info-subtitle {
+      transform: rotate(-90deg) translate(-125px, 0);
+    }
+  }
+
+  &-subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 8px;
+    opacity: .5;
+    transform: rotate(-90deg) translate(-190px, 0px);
+    width: 0;
+    height: 0;
+    white-space: nowrap;
+  }
+
+  &-title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    width: 242px;
+    padding-left: 40px;
+    position: relative;
+
+    &:nth-child(2) {
+      width: 247px;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 5.25px;
+      opacity: .75;
+      display: block;
+      text-align: right;
+      padding-right: 14px;
+    }
+
+    .sleep__slider-info-price {
+      padding: 0;
+      display: inline-block;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 36px;
+      letter-spacing: 0;
+      opacity: 1;
+    }
+  }
+}
+
+
+//  sleep  slider  btn
+.sleep__slider-btn {
+  .surf__box-inner-btn {
+    position: static;
+    text-align: center;
+    opacity: 1;
+  }
+}
