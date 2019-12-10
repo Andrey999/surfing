@@ -1,0 +1,223 @@
+.shop {
+  background-image: url(../img/shop-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  &__slider {
+    padding-left: 132px;
+
+    .slider__arrows {
+      opacity: .25;
+    }
+  }
+}
+
+
+//  slider inner
+.shop__slider-inner {
+  display: flex;
+
+  // shop  slider  inner  info
+  &-info {
+    width: 100%;
+    max-width: 480px;
+    padding-top: 166px;
+    margin-right: 40px;
+
+
+    // slider  info  decription
+    &-description {
+      &-subtitle {
+        font-size: 22px;
+        line-height: 32px;
+        letter-spacing: 7.3px;
+        opacity: 0.5;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 46%;
+          left: 135px;
+          width: 80px;
+          height: 1px;
+          background: #fff;
+        }
+      }
+
+      &-title {
+        max-width: 340px;
+        margin-bottom: 47px;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  // shop  slider  info  price
+  &-price {
+    &-list {
+      li {
+        display: inline-block;
+        margin-bottom: 9px;
+      }
+    }
+
+    p {
+      font-weight: 800;
+      font-size: 32px;  
+      line-height: 40px;
+      margin-bottom: 64px;
+
+      sup {
+        font-size: 18px;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  // btn
+  &-btn {
+    .surf__box-inner-btn {
+      position: static;
+      text-align: left;
+      opacity: 1;
+    }
+  }
+
+
+
+  // shop  slider  inner  content
+  &-content {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 70px;
+
+    &-surfboard {
+      position: relative;
+
+      .shop__slider-surfboard-box {
+        position: absolute;
+
+        &.surfboard-box-1 {
+          top: 202px;
+          right: 36px;
+        }
+
+        &.surfboard-box-2 {
+          top: 295px;
+          left: 10px;
+        }
+
+        &.surfboard-box-3 {
+          bottom: 65px;
+          left: 53px;
+        }
+
+        &-circle {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #fff;
+          position: relative;
+          cursor: pointer;
+          &.active {
+            .shop__slider-surfboard-box-circle-row {
+              transform: translate(-50%, -50%) rotate(0);
+            }
+          }
+
+          &.active + .shop__slider-surfboard-box-content {
+            display: block;
+          }
+
+          &-row {
+            position: absolute;
+            width: 12px;
+            height: 2px;
+            background: #4AF6CD;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0);
+
+            &:last-child {
+              transform: translate(-50%, -50%) rotate(90deg) ;
+            }
+          }
+        }
+
+        &-content {
+          display: none;
+          position: absolute;
+          left: 28px;
+          top: -15px;
+          font-weight: 800;
+          font-size: 24px;
+          line-height: 24px;
+          padding-left: 104px;
+          width: 360px;
+
+          &:before {
+            content: '';
+            width: 80px;
+            height: 1px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            background: #4AF6CD;
+          }
+        }
+      }
+    }
+
+
+    //  shop  slider  inner content  box
+    &-box {
+      padding-left: 150px;
+
+      .shop__slider-inner-content-extra {
+        h2 {
+          font-weight: 800;
+          font-size: 28px;
+          line-height: 40px;
+          margin-bottom: 25px;
+        }
+      }
+
+     &-items {
+      display: flex;
+
+      .shop__slider-inner-content-name {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 8px;
+        opacity: 0.5;
+        margin-bottom: 16px;
+      }
+
+      .shop__slider-inner-content-price {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 40px;
+      }
+     }
+
+     &-item {
+       margin-right: 57px;
+       text-align: center;
+     }
+
+     &-img {
+       min-height: 105px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 36px;
+     }
+    }
+  }
+}
