@@ -109,6 +109,9 @@ window.onload = function () {
       getSum();
     });
 
-
+//////////////////  section shop   ////////////////////////
+$('.shop__slider-surfboard-box-circle').click(function() {
+  $(this).toggleClass('active');
+});
     
 };
