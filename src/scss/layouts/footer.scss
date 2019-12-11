@@ -1,0 +1,31 @@
+.footer {
+  padding: 300px 0 34px;
+
+  &__btn {
+    position: relative;
+
+    .surf__box-inner-btn {
+      opacity: 1;
+
+      .btn {
+        span {
+          padding: 17px;
+
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__copy {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 1.05px;
+    opacity: 0.5;
+    margin-top: 27px;
+  }
+}
