@@ -1,4 +1,9 @@
 window.onload = function () {
+  // burger  mobile  menu
+  $('.menu__burger').click(function() {
+    $('.menu').toggleClass('active');
+  });
+
 
   //////////////////  header  slider  ////////////////////////
   $('.header__slider').slick({
