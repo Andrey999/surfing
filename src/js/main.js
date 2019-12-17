@@ -28,7 +28,32 @@ window.onload = function () {
     slidesToScroll: 1,
     arrows: false,
     asNavFor: '.surf__slider',
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1140,
+        settings: {
+          slidesToShow: 3,
+          focusOnSelect: false,
+        }
+      },
+      {
+        breakpoint: 960,
+        settings: {
+          slidesToShow: 2,
+          focusOnSelect: false,
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 1,
+          focusOnSelect: false,
+          centerMode: true
+        }
+      },
+    ]
   });
 
 
@@ -39,6 +64,26 @@ window.onload = function () {
     asNavFor: '.slider__map',
     prevArrow: '<img class="slider__arrows slider__arrows-left" src="src/img/arrow-left.svg" alt="arrow-left">',
     nextArrow: '<img class="slider__arrows slider__arrows-right" src="src/img/arrow-right.svg" alt="arrow-right">',
+    responsive: [
+      {
+        breakpoint: 1140,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 960,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+    ]
   });
 
 
