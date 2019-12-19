@@ -77,6 +77,20 @@
 
 
 
+  // section  sleep
+  .sleep {
+    padding: 80px 0 260px;
+  }
+
+  .sleep__slider-description {  
+    padding: 160px 0 0 80px;
+  }
+
+  .sleep__slider-info {
+    padding: 0px 80px 0 80px;
+  }
+
+
   
 
 
@@ -429,6 +443,16 @@
     margin-right: 170px;
   }
 
+
+  // section  sleep
+  .sleep__slider-info {
+    flex-wrap: wrap;
+  }
+
+  .sleep__slider-info-items:nth-child(1) {
+    margin-right: 200px;
+  }
+
 }
 //////////////////////////////////////////  
 /////////////////////////////////////////
@@ -452,6 +476,29 @@
 
   .travel__slider-info-items:nth-child(1) {
     margin-right: 100px;
+  }
+
+
+  // section  sleep
+  .sleep {
+    padding: 30px 0 260px;
+  }
+
+  .sleep .all__title-section span {
+    font-size: 130px;
+    transform: translateX(-27px);
+  }
+
+  .sleep__slider-description {
+    background-size: 380px;
+  }
+
+  .sleep__slider-info-items:nth-child(1) {
+    margin-right: 50px;
+  } 
+
+  .sleep__slider-info-items {
+    margin-bottom: 40px;
   }
 }
 ///////////////////////////////////////////
@@ -536,6 +583,36 @@
   .travel__slider-info-title span {
     padding-right: 40px;
   }
+
+
+
+  // section  sleep
+  .sleep .all__title-section span {
+    font-size: 110px;
+  }
+
+  .sleep__slider-description {
+    padding: 230px 0 0 30px;
+    margin-top: -270px;
+    background-size: 340px;
+  }
+
+  .sleep__slider-info {
+    padding: 0 30px;
+  }
+
+  .sleep__slider-info-items:nth-child(1) {
+    margin-right: 0;
+  }
+
+  .sleep__slider-info-title:nth-child(2) {
+    width: 230px;
+  }
+
+
+
+
+
 }
 ///////////////////////////////////////////
 ////////////////////////////////////////// 
@@ -650,6 +727,84 @@
   .travel__slider-info-title {
     padding-left: 0;
   }
+
+
+
+  // section  sleep
+  .sleep {
+    padding: 80px 0 0;
+  }
+
+  .sleep .all__title-section span {
+    font-size: 80px;
+  }
+
+  .sleep__slider-description  .sleep__company-description-subtitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .sleep__slider-description .sleep__company-description-subtitle::after {
+    left: 130px;
+    width: 50px;
+  }
+
+  .sleep__slider-description .sleep__company-description-title {
+    font-size: 35px;
+    line-height: 70px;
+  }
+
+  .sleep__slider-description .sleep__company-description-title .sleep__star-list {
+    left: 195px;
+  }
+
+  .sleep__slider-info {
+    flex-direction: column;
+  }
+
+  .sleep__slider-info-items {
+    min-height: 130px;
+    margin-bottom: 20px;
+  }
+
+  .sleep__slider-info-items:nth-child(1) .sleep__slider-info-subtitle {
+    transform: rotate(0deg) translate(0,0);
+  }
+
+  .sleep__slider-info-title:nth-child(2) {
+    width: 247px;
+  }
+
+  .sleep__slider-info-items:nth-child(4) .sleep__slider-info-subtitle {
+    transform: rotate(0deg) translate(0,0);
+  }
+
+  .sleep__slider-info-subtitle {
+    transform: rotate(0deg) translate(0,0);
+    height: auto;
+    line-height: 36px;
+    letter-spacing: 4px;
+  }
+
+  .sleep__slider-info-title {
+    padding-left: 0;
+  }
+
+  .quantity-button.quantity-down {
+    left: 110px;
+  }
+
+  .quantity-button.quantity-up {
+    right: 70px;
+  }
+
+  .sleep__slider-info-title span {
+    padding-right: 75px;
+  }
+  
+
+
+
 }
 ///////////////////////////////////////////
 ////////////////////////////////////////// 
@@ -738,6 +893,65 @@
     font-size: 30px;
     line-height: 30px;
   }
+
+  //  section  sleep
+  .sleep {
+    background-size: 45%;
+  }
+
+  .sleep__slider-item-head .surf__subtitle {
+    padding-top: 60px;
+  }
+
+  .sleep__slider-item-head {
+    min-height: 570px;
+  }
+
+  .sleep__slider-description {
+    padding: 175px 0 0 30px;
+    margin-top: -290px;
+    background-size: 200px;
+    min-height: 314px;
+  }
+
+  .sleep__slider-description .sleep__company-description-subtitle {
+    line-height: 45px;
+  }
+
+  .sleep__slider-description .sleep__company-description-title {
+    line-height: 35px;
+  }
+
+  .sleep__slider-description .sleep__company-description-title .sleep__star-list li:first-child img {
+    padding-left: 0;
+  }
+
+  .sleep__slider-description .sleep__company-description-title .sleep__star-list {
+    position: static;
+  }
+
+  .sleep__slider-info-items {
+    min-height: 115px;
+    margin-bottom: 10px;
+  }
+
+  .sleep__slider-info-title {
+    font-size: 30px;
+  }
+
+  .quantity-button.quantity-up {
+    right: 100px;
+  }
+
+  .quantity-button.quantity-down {
+    left: 80px;
+  }
+
+  .sleep__slider-info-title span {
+    padding-right: 95px;
+  }
+
+
 }
 ///////////////////////////////////////////
 ////////////////////////////////////////// 
