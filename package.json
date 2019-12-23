@@ -31,6 +31,7 @@
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.0",
     "slick-carousel": "^1.8.1",
+    "wow.js": "^1.2.2",
     "wowjs": "^1.1.3"
   }
 }
