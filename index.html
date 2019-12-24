@@ -69,25 +69,25 @@
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__list-item">
-                        <a href="#">
+                        <a href="#surf">
                             <img src="src/img/icon-1.svg" alt="icon-1">
                             <span>Surf</span>
                         </a>
                     </li>
                     <li class="menu__list-item">
-                        <a href="#">
+                        <a href="#travel">
                             <img src="src/img/icon-2.svg" alt="icon-2">
                             <span>Travel</span>
                         </a>
                     </li>
                     <li class="menu__list-item">
-                        <a href="#">
+                        <a href="#sleep">
                             <img src="src/img/icon-3.svg" alt="icon-3">
                             <span>Sleep</span>
                         </a>
                     </li>
                     <li class="menu__list-item">
-                        <a href="#">
+                        <a href="#shop">
                             <img src="src/img/icon-4.svg" alt="icon-4">
                             <span>Shop</span>
                         </a>
@@ -104,8 +104,8 @@
 
             <!-- header  date -->
             <div class="header__date">
-                <h2>20</h2>
-                <span>06 | 2018</span>
+                <h2 id="header__day"></h2>
+                <span id="header__month"></span> <span>|</span> <span id="header__year"></span>
             </div>
 
             <!--  header  location  -->
@@ -122,7 +122,7 @@
             <div class="header__slider-item">
                 <div class="header__slider-info">
                     <p class="header__slider-info-subtitle headline-left">Surf</p>
-                    <h2 class="header__slider-info-title">North Shore</h2>
+                    <h2 class="header__slider-info-title animated fadeInLeft delay-1s">North Shore</h2>
                     <p class="header__slider-info-subtext headline-left">Condition</p>
                     <h2 class="header__slider-info-text">Radical</h2>
                     <a href="#" class="header__slider-info-link">
@@ -174,7 +174,7 @@
         </div>
 
         <!--  slider  dots  -->
-        <div class="dots">
+        <div class="dots animated fadeInUp delay-2s">
             <!-- 01 dots -->
             <div class="dots__container">
                 <div class="dots__container-item">
@@ -208,20 +208,1851 @@
             </div>
         </div>
 
-        <!-- arrow  down -->
+        <!-- arrow  down --> 
         <div class="header__arrow-down">
-            <a href="#" class="animated fadeInDown slow">
+            <a href="#surf" class="animated fadeInDown slow">
                 <img src="src/img/down-arrows.svg" alt="arrow-down">
             </a>
         </div>
-
     </header>
 
-  
-        
 
-    
-   
-<script src="build/js/all.js"></script>
+    <!--   SECTION  SURF -->
+    <div class="container">
+        <section class="surf" id="surf">
+
+            <!--  title  surf -->
+            <div class="all__title-section wow fadeInLeft">
+                <span>surf
+                    <h3>surf</h3>
+                </span>
+            </div>
+
+            <!--  subtitle  surf   -->
+            <div class="surf__subtitle wow fadeInRight" data-wow-offset="200">
+                <h3 class="headline-left">Current location</h3>
+                <h2 class="surf__subtitle-location">California <span>|</span> Usa</h2>
+            </div>
+
+            <!--  surf  slider  map  -->
+            <div class="slider__map wow zoomIn" data-wow-offset="200" data-wow-duration="1.5s">
+
+                <!--  slider  dots  1 -->
+                <div class="slider__dots slider__dots--item-1 wow fadeInUpBig" data-wow-delay="1.2s">
+
+                    <!--  map  circle  green  dots -->
+                    <div class="slider__dots-circle"></div>
+
+                    <!--  map  content  description  -->
+                    <div class="slider__dots-content wow fadeIn" data-wow-delay="2.5s">
+                        <div class="slider__dots-content-container">
+                            <div class="slider__dots-content-top">
+                                <h2 class="slider__dots-content-title">Malibu Beach</h2>
+                                <p class="slider__dots-content-text">Usa</p>
+                            </div>
+
+                            <a href="#" class="slider__dots-content-link">
+                                <img src="src/img/arrow-right.svg" alt="arrow-right">
+                            </a>
+                        </div>
+
+                        <div class="slider__dots-contents">
+                            <!-- item 1 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/surf-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">9 - 13</h3>
+                                <p class="slider__dots-contents-item-text">Surf (FT)</p>
+                            </div>
+
+                            <!-- item 2 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/water-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">+2.3</h3>
+                                <p class="slider__dots-contents-item-text">Tide (FT)</p>
+                            </div>
+
+                            <!-- item 3 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/wind-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">4 SE</h3>
+                                <p class="slider__dots-contents-item-text">Wind (KTS)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--  slider dots 2  -->
+                <div class="slider__dots slider__dots--item-2 wow fadeInUpBig" data-wow-delay="1.3s">
+
+                    <!--  map  dots  -->
+                    <div class="slider__dots-circle"></div>
+
+                    <!--  map  content  description  -->
+                    <div class="slider__dots-content">
+                        <div class="slider__dots-content-container">
+                            <div class="slider__dots-content-top">
+                                <h2 class="slider__dots-content-title">Airlie Beach</h2>
+                                <p class="slider__dots-content-text">Australia</p>
+                            </div>
+
+                            <a href="#" class="slider__dots-content-link">
+                                <img src="src/img/arrow-right.svg" alt="arrow-right">
+                            </a>
+                        </div>
+
+                        <div class="slider__dots-contents">
+                            <!-- item 1 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/surf-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">9 - 13</h3>
+                                <p class="slider__dots-contents-item-text">Surf (FT)</p>
+                            </div>
+
+                            <!-- item 2 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/water-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">+2.3</h3>
+                                <p class="slider__dots-contents-item-text">Tide (FT)</p>
+                            </div>
+
+                            <!-- item 3 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/wind-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">4 SE</h3>
+                                <p class="slider__dots-contents-item-text">Wind (KTS)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  slider dots 3  -->
+                <div class="slider__dots slider__dots--item-3 wow fadeInUpBig" data-wow-delay="1.4s">
+
+                    <!--  map  dots  -->
+                    <div class="slider__dots-circle"></div>
+
+                    <!--  map  content  description  -->
+                    <div class="slider__dots-content">
+                        <div class="slider__dots-content-container">
+                            <div class="slider__dots-content-top">
+                                <h2 class="slider__dots-content-title">Cloud Nine</h2>
+                                <p class="slider__dots-content-text">Philippines</p>
+                            </div>
+
+                            <a href="#" class="slider__dots-content-link">
+                                <img src="src/img/arrow-right.svg" alt="arrow-right">
+                            </a>
+                        </div>
+
+                        <div class="slider__dots-contents">
+                            <!-- item 1 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/surf-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">9 - 13</h3>
+                                <p class="slider__dots-contents-item-text">Surf (FT)</p>
+                            </div>
+
+                            <!-- item 2 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/water-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">+2.3</h3>
+                                <p class="slider__dots-contents-item-text">Tide (FT)</p>
+                            </div>
+
+                            <!-- item 3 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/wind-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">4 SE</h3>
+                                <p class="slider__dots-contents-item-text">Wind (KTS)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  slider dots 4  -->
+                <div class="slider__dots slider__dots--item-4 wow fadeInUpBig" data-wow-delay="1.5s">
+
+                    <!--  map  dots  -->
+                    <div class="slider__dots-circle"></div>
+
+                    <!--  map  content  description  -->
+                    <div class="slider__dots-content">
+                        <div class="slider__dots-content-container">
+                            <div class="slider__dots-content-top">
+                                <h2 class="slider__dots-content-title">Vieux Boucau</h2>
+                                <p class="slider__dots-content-text">France</p>
+                            </div>
+
+                            <a href="#" class="slider__dots-content-link">
+                                <img src="src/img/arrow-right.svg" alt="arrow-right">
+                            </a>
+                        </div>
+
+                        <div class="slider__dots-contents">
+                            <!-- item 1 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/surf-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">9 - 13</h3>
+                                <p class="slider__dots-contents-item-text">Surf (FT)</p>
+                            </div>
+
+                            <!-- item 2 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/water-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">+2.3</h3>
+                                <p class="slider__dots-contents-item-text">Tide (FT)</p>
+                            </div>
+
+                            <!-- item 3 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/wind-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">4 SE</h3>
+                                <p class="slider__dots-contents-item-text">Wind (KTS)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  slider  dots  5 -->
+                <div class="slider__dots slider__dots--item-5 wow fadeInUpBig" data-wow-delay="1.6s">
+
+                    <!--  map  dots  -->
+                    <div class="slider__dots-circle"></div>
+
+                    <!--  map  content  description  -->
+                    <div class="slider__dots-content">
+                        <div class="slider__dots-content-container">
+                            <div class="slider__dots-content-top">
+                                <h2 class="slider__dots-content-title">Malibu Beach</h2>
+                                <p class="slider__dots-content-text">Usa</p>
+                            </div>
+
+                            <a href="#" class="slider__dots-content-link">
+                                <img src="src/img/arrow-right.svg" alt="arrow-right">
+                            </a>
+                        </div>
+
+                        <div class="slider__dots-contents">
+                            <!-- item 1 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/surf-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">9 - 13</h3>
+                                <p class="slider__dots-contents-item-text">Surf (FT)</p>
+                            </div>
+
+                            <!-- item 2 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/water-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">+2.3</h3>
+                                <p class="slider__dots-contents-item-text">Tide (FT)</p>
+                            </div>
+
+                            <!-- item 3 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/wind-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">4 SE</h3>
+                                <p class="slider__dots-contents-item-text">Wind (KTS)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--  slider dots 6  -->
+                <div class="slider__dots slider__dots--item-6 wow fadeInUpBig" data-wow-delay="1.7s">
+
+                    <!--  map  dots  -->
+                    <div class="slider__dots-circle"></div>
+
+                    <!--  map  content  description  -->
+                    <div class="slider__dots-content">
+                        <div class="slider__dots-content-container">
+                            <div class="slider__dots-content-top">
+                                <h2 class="slider__dots-content-title">Airlie Beach</h2>
+                                <p class="slider__dots-content-text">Australia</p>
+                            </div>
+
+                            <a href="#" class="slider__dots-content-link">
+                                <img src="src/img/arrow-right.svg" alt="arrow-right">
+                            </a>
+                        </div>
+
+                        <div class="slider__dots-contents">
+                            <!-- item 1 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/surf-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">9 - 13</h3>
+                                <p class="slider__dots-contents-item-text">Surf (FT)</p>
+                            </div>
+
+                            <!-- item 2 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/water-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">+2.3</h3>
+                                <p class="slider__dots-contents-item-text">Tide (FT)</p>
+                            </div>
+
+                            <!-- item 3 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/wind-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">4 SE</h3>
+                                <p class="slider__dots-contents-item-text">Wind (KTS)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  slider dots 7  -->
+                <div class="slider__dots slider__dots--item-7 wow fadeInUpBig" data-wow-delay="1.8s">
+
+                    <!--  map  dots  -->
+                    <div class="slider__dots-circle"></div>
+
+                    <!--  map  content  description  -->
+                    <div class="slider__dots-content">
+                        <div class="slider__dots-content-container">
+                            <div class="slider__dots-content-top">
+                                <h2 class="slider__dots-content-title">Cloud Nine</h2>
+                                <p class="slider__dots-content-text">Philippines</p>
+                            </div>
+
+                            <a href="#" class="slider__dots-content-link">
+                                <img src="src/img/arrow-right.svg" alt="arrow-right">
+                            </a>
+                        </div>
+
+                        <div class="slider__dots-contents">
+                            <!-- item 1 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/surf-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">9 - 13</h3>
+                                <p class="slider__dots-contents-item-text">Surf (FT)</p>
+                            </div>
+
+                            <!-- item 2 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/water-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">+2.3</h3>
+                                <p class="slider__dots-contents-item-text">Tide (FT)</p>
+                            </div>
+
+                            <!-- item 3 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/wind-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">4 SE</h3>
+                                <p class="slider__dots-contents-item-text">Wind (KTS)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  slider dots 8  -->
+                <div class="slider__dots slider__dots--item-8 wow fadeInUpBig" data-wow-delay="1.9s">
+
+                    <!--  map  dots  -->
+                    <div class="slider__dots-circle"></div>
+
+                    <!--  map  content  description  -->
+                    <div class="slider__dots-content">
+
+                        <div class="slider__dots-content-container">
+                            <div class="slider__dots-content-top">
+                                <h2 class="slider__dots-content-title">Vieux Boucau</h2>
+                                <p class="slider__dots-content-text">France</p>
+                            </div>
+
+                            <a href="#" class="slider__dots-content-link">
+                                <img src="src/img/arrow-right.svg" alt="arrow-right">
+                            </a>
+                        </div>
+
+                        <div class="slider__dots-contents">
+                            <!-- item 1 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/surf-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">9 - 13</h3>
+                                <p class="slider__dots-contents-item-text">Surf (FT)</p>
+                            </div>
+
+                            <!-- item 2 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/water-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">+2.3</h3>
+                                <p class="slider__dots-contents-item-text">Tide (FT)</p>
+                            </div>
+
+                            <!-- item 3 -->
+                            <div class="slider__dots-contents-item">
+                                <img src="src/img/wind-icon.svg" alt="surf-icon">
+                                <h3 class="slider__dots-contents-item-number">4 SE</h3>
+                                <p class="slider__dots-contents-item-text">Wind (KTS)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--  .slider__map  -->
+
+            <!--  surf  slider  -->
+            <div class="surf__slider">
+                <!--  surf  box  slide 1   -->
+                <div class="surf__box">
+                    <div class="surf__box-wrapper wow fadeInUp" data-wow-delay=".2s" style="background-image: url(src/img/slide-1.jpg);">
+                        <div class="surf__box-inner">
+                            <div class="surf__box-inner-title">Malibu Beach</div>
+                            <div class="surf__box-inner-location">California <span>|</span> Usa</div>
+                            <!-- btn -->
+                            <div class="surf__box-inner-btn">
+                                <a href="#" class="btn">view
+                                    <span>surf</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  surf  box  slide 2   -->
+                <div class="surf__box">
+                    <div class="surf__box-wrapper wow fadeInUp" data-wow-delay=".4s" style="background-image: url(src/img/slide-2.jpg);">
+                        <div class="surf__box-inner">
+                            <div class="surf__box-inner-title">Airlie Beach</div>
+                            <div class="surf__box-inner-location">Queensland <span>|</span> Australia</div>
+                            <!-- btn -->
+                            <div class="surf__box-inner-btn">
+                                <a href="#" class="btn">view
+                                    <span>surf</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  surf  box  slide 3   -->
+                <div class="surf__box">
+                    <div class="surf__box-wrapper wow fadeInUp" data-wow-delay=".6s" style="background-image: url(src/img/slide-3.jpg);">
+                        <div class="surf__box-inner">
+                            <div class="surf__box-inner-title">Cloud Nine</div>
+                            <div class="surf__box-inner-location">Siargao <span>|</span> Philippines</div>
+                            <!-- btn -->
+                            <div class="surf__box-inner-btn">
+                                <a href="#" class="btn">view
+                                    <span>surf</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  surf  box  slide 4   -->
+                <div class="surf__box">
+                    <div class="surf__box-wrapper wow fadeInUp" data-wow-delay=".8s" style="background-image: url(src/img/slide-4.jpg);">
+                        <div class="surf__box-inner">
+                            <div class="surf__box-inner-title">Vieux Boucau</div>
+                            <div class="surf__box-inner-location">Hossegor <span>|</span> France</div>
+                            <!-- btn -->
+                            <div class="surf__box-inner-btn">
+                                <a href="#" class="btn">view
+                                    <span>surf</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  surf  box  slide 5   -->
+                <div class="surf__box">
+                    <div class="surf__box-wrapper" style="background-image: url(src/img/slide-1.jpg);">
+                        <div class="surf__box-inner">
+                            <div class="surf__box-inner-title">Malibu Beach</div>
+                            <div class="surf__box-inner-location">California <span>|</span> Usa</div>
+                            <!-- btn -->
+                            <div class="surf__box-inner-btn">
+                                <a href="#" class="btn">view
+                                    <span>surf</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  surf  box  slide 6   -->
+                <div class="surf__box">
+                    <div class="surf__box-wrapper" style="background-image: url(src/img/slide-2.jpg);">
+                        <div class="surf__box-inner">
+                            <div class="surf__box-inner-title">Airlie Beach</div>
+                            <div class="surf__box-inner-location">Queensland <span>|</span> Australia</div>
+                            <!-- btn -->
+                            <div class="surf__box-inner-btn">
+                                <a href="#" class="btn">view
+                                    <span>surf</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  surf  box  slide 7   -->
+                <div class="surf__box">
+                    <div class="surf__box-wrapper" style="background-image: url(src/img/slide-3.jpg);">
+                        <div class="surf__box-inner">
+                            <div class="surf__box-inner-title">Cloud Nine</div>
+                            <div class="surf__box-inner-location">Siargao <span>|</span> Philippines</div>
+                            <!-- btn -->
+                            <div class="surf__box-inner-btn">
+                                <a href="#" class="btn">view
+                                    <span>surf</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  surf  box  slide 8   -->
+                <div class="surf__box">
+                    <div class="surf__box-wrapper" style="background-image: url(src/img/slide-4.jpg);">
+                        <div class="surf__box-inner">
+                            <div class="surf__box-inner-title">Vieux Boucau</div>
+                            <div class="surf__box-inner-location">Hossegor <span>|</span> France</div>
+                            <!-- btn -->
+                            <div class="surf__box-inner-btn">
+                                <a href="#" class="btn">view
+                                    <span>surf</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div> <!-- .container -->
+
+
+    <!--  SECTION  TRAVEL  -->
+    <section class="travel" id="travel">
+        <div class="container">
+
+            <!--  title  travel -->
+            <div class="all__title-section wow fadeInLeft">
+                <span>travel
+                    <h3>travel</h3>
+                </span>
+            </div>
+
+            <!--   travel  slider  -->
+            <div class="travel__slider">
+
+                <!--   travel  slider  item  1  -->
+                <div class="travel__slider-item">
+                    <div class="travel__slider-item-head" style="background-image: url(src/img/travel-image.png);">
+
+                        <!--  subtitle  travel   -->
+                        <div class="surf__subtitle wow fadeInRight" data-wow-offset="200">
+                            <h3 class="headline-left">shore</h3>
+                            <h2 class="surf__subtitle-location">Airlie Beach <span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .travel__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="travel__slider-description wow fadeInUp" data-wow-offset="200" style="background-image: url(src/img/airbus-virgin.png);">
+                        <div class="travel__company-description">
+                            <h3 class="travel__company-description-subtitle">Airline</h3>
+                            <h2 class="travel__company-description-title">Virgin Australia
+                                <img src="src/img/virgin.svg" alt="company-Virgin-Australia">
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="travel__slider-info">
+
+                        <div class="travel__slider-info-items wow fadeInUp" data-wow-delay=".2s" data-wow-offset="200">
+                            <h3 class="travel__slider-info-subtitle">Destination</h3>
+                            <h2 class="travel__slider-info-title">Queensland Australia</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items wow fadeInUp" data-wow-delay=".4s" data-wow-offset="200">
+                            <h3 class="travel__slider-info-subtitle">Distance</h3>
+                            <h2 class="travel__slider-info-title">7,065 Miles</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items wow fadeInUp" data-wow-delay=".6s" data-wow-offset="200">
+                            <h3 class="travel__slider-info-subtitle">Travel Time</h3>
+                            <h2 class="travel__slider-info-title">23 Hours 5 Minutes</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items wow fadeInUp" data-wow-delay=".8s" data-wow-offset="200">
+                            <h3 class="travel__slider-info-subtitle">Pricing</h3>
+                            <h2 class="travel__slider-info-title">$1,976 USD <span>Round Trip</span></h2>
+                        </div>
+
+                    </div> <!--  .travel__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="travel__slider-btn wow fadeInUp" data-wow-offset="150">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Flight</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .travel__slider-item -->
+
+                <!--   travel  slider  item  2  -->
+                <div class="travel__slider-item">
+                    <div class="travel__slider-item-head" style="background-image: url(src/img/travel-image.png);">
+
+                        <!--  subtitle  travel   -->
+                        <div class="surf__subtitle">
+                            <h3 class="headline-left">shore</h3>
+                            <h2 class="surf__subtitle-location">Airlie Beach <span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .travel__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="travel__slider-description" style="background-image: url(src/img/airbus-virgin.png);">
+                        <div class="travel__company-description">
+                            <h3 class="travel__company-description-subtitle">Airline</h3>
+                            <h2 class="travel__company-description-title">Virgin Australia
+                                <img src="src/img/virgin.svg" alt="company-Virgin-Australia">
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="travel__slider-info">
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Destination</h3>
+                            <h2 class="travel__slider-info-title">Queensland Australia</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Distance</h3>
+                            <h2 class="travel__slider-info-title">7,065 Miles</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Travel Time</h3>
+                            <h2 class="travel__slider-info-title">23 Hours 5 Minutes</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Pricing</h3>
+                            <h2 class="travel__slider-info-title">$1,976 USD <span>Round Trip</span></h2>
+                        </div>
+
+                    </div> <!--  .travel__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="travel__slider-btn">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Flight</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .travel__slider-item -->
+
+                <!--   travel  slider  item  3  -->
+                <div class="travel__slider-item">
+                    <div class="travel__slider-item-head" style="background-image: url(src/img/travel-image.png);">
+
+                        <!--  subtitle  travel   -->
+                        <div class="surf__subtitle">
+                            <h3 class="headline-left">shore</h3>
+                            <h2 class="surf__subtitle-location">Airlie Beach <span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .travel__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="travel__slider-description" style="background-image: url(src/img/airbus-virgin.png);">
+                        <div class="travel__company-description">
+                            <h3 class="travel__company-description-subtitle">Airline</h3>
+                            <h2 class="travel__company-description-title">Virgin Australia
+                                <img src="src/img/virgin.svg" alt="company-Virgin-Australia">
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="travel__slider-info">
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Destination</h3>
+                            <h2 class="travel__slider-info-title">Queensland Australia</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Distance</h3>
+                            <h2 class="travel__slider-info-title">7,065 Miles</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Travel Time</h3>
+                            <h2 class="travel__slider-info-title">23 Hours 5 Minutes</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Pricing</h3>
+                            <h2 class="travel__slider-info-title">$1,976 USD <span>Round Trip</span></h2>
+                        </div>
+
+                    </div> <!--  .travel__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="travel__slider-btn">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Flight</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .travel__slider-item -->
+
+                <!--   travel  slider  item  4  -->
+                <div class="travel__slider-item">
+                    <div class="travel__slider-item-head" style="background-image: url(src/img/travel-image.png);">
+
+                        <!--  subtitle  travel   -->
+                        <div class="surf__subtitle">
+                            <h3 class="headline-left">shore</h3>
+                            <h2 class="surf__subtitle-location">Airlie Beach <span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .travel__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="travel__slider-description" style="background-image: url(src/img/airbus-virgin.png);">
+                        <div class="travel__company-description">
+                            <h3 class="travel__company-description-subtitle">Airline</h3>
+                            <h2 class="travel__company-description-title">Virgin Australia
+                                <img src="src/img/virgin.svg" alt="company-Virgin-Australia">
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="travel__slider-info">
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Destination</h3>
+                            <h2 class="travel__slider-info-title">Queensland Australia</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Distance</h3>
+                            <h2 class="travel__slider-info-title">7,065 Miles</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Travel Time</h3>
+                            <h2 class="travel__slider-info-title">23 Hours 5 Minutes</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Pricing</h3>
+                            <h2 class="travel__slider-info-title">$1,976 USD <span>Round Trip</span></h2>
+                        </div>
+
+                    </div> <!--  .travel__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="travel__slider-btn">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Flight</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .travel__slider-item -->
+
+                <!--   travel  slider  item  5  -->
+                <div class="travel__slider-item">
+                    <div class="travel__slider-item-head" style="background-image: url(src/img/travel-image.png);">
+
+                        <!--  subtitle  travel   -->
+                        <div class="surf__subtitle">
+                            <h3 class="headline-left">shore</h3>
+                            <h2 class="surf__subtitle-location">Airlie Beach <span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .travel__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="travel__slider-description" style="background-image: url(src/img/airbus-virgin.png);">
+                        <div class="travel__company-description">
+                            <h3 class="travel__company-description-subtitle">Airline</h3>
+                            <h2 class="travel__company-description-title">Virgin Australia
+                                <img src="src/img/virgin.svg" alt="company-Virgin-Australia">
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="travel__slider-info">
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Destination</h3>
+                            <h2 class="travel__slider-info-title">Queensland Australia</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Distance</h3>
+                            <h2 class="travel__slider-info-title">7,065 Miles</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Travel Time</h3>
+                            <h2 class="travel__slider-info-title">23 Hours 5 Minutes</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Pricing</h3>
+                            <h2 class="travel__slider-info-title">$1,976 USD <span>Round Trip</span></h2>
+                        </div>
+
+                    </div> <!--  .travel__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="travel__slider-btn">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Flight</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .travel__slider-item -->
+
+                <!--   travel  slider  item  6  -->
+                <div class="travel__slider-item">
+                    <div class="travel__slider-item-head" style="background-image: url(src/img/travel-image.png);">
+
+                        <!--  subtitle  travel   -->
+                        <div class="surf__subtitle">
+                            <h3 class="headline-left">shore</h3>
+                            <h2 class="surf__subtitle-location">Airlie Beach <span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .travel__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="travel__slider-description" style="background-image: url(src/img/airbus-virgin.png);">
+                        <div class="travel__company-description">
+                            <h3 class="travel__company-description-subtitle">Airline</h3>
+                            <h2 class="travel__company-description-title">Virgin Australia
+                                <img src="src/img/virgin.svg" alt="company-Virgin-Australia">
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="travel__slider-info">
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Destination</h3>
+                            <h2 class="travel__slider-info-title">Queensland Australia</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Distance</h3>
+                            <h2 class="travel__slider-info-title">7,065 Miles</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Travel Time</h3>
+                            <h2 class="travel__slider-info-title">23 Hours 5 Minutes</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Pricing</h3>
+                            <h2 class="travel__slider-info-title">$1,976 USD <span>Round Trip</span></h2>
+                        </div>
+
+                    </div> <!--  .travel__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="travel__slider-btn">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Flight</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .travel__slider-item -->
+
+
+                <!--   travel  slider  item  7  -->
+                <div class="travel__slider-item">
+                    <div class="travel__slider-item-head" style="background-image: url(src/img/travel-image.png);">
+
+                        <!--  subtitle  travel   -->
+                        <div class="surf__subtitle">
+                            <h3 class="headline-left">shore</h3>
+                            <h2 class="surf__subtitle-location">Airlie Beach <span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .travel__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="travel__slider-description" style="background-image: url(src/img/airbus-virgin.png);">
+                        <div class="travel__company-description">
+                            <h3 class="travel__company-description-subtitle">Airline</h3>
+                            <h2 class="travel__company-description-title">Virgin Australia
+                                <img src="src/img/virgin.svg" alt="company-Virgin-Australia">
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="travel__slider-info">
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Destination</h3>
+                            <h2 class="travel__slider-info-title">Queensland Australia</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Distance</h3>
+                            <h2 class="travel__slider-info-title">7,065 Miles</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Travel Time</h3>
+                            <h2 class="travel__slider-info-title">23 Hours 5 Minutes</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Pricing</h3>
+                            <h2 class="travel__slider-info-title">$1,976 USD <span>Round Trip</span></h2>
+                        </div>
+
+                    </div> <!--  .travel__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="travel__slider-btn">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Flight</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .travel__slider-item -->
+
+                <!--   travel  slider  item  8  -->
+                <div class="travel__slider-item">
+                    <div class="travel__slider-item-head" style="background-image: url(src/img/travel-image.png);">
+
+                        <!--  subtitle  travel   -->
+                        <div class="surf__subtitle">
+                            <h3 class="headline-left">shore</h3>
+                            <h2 class="surf__subtitle-location">Airlie Beach <span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .travel__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="travel__slider-description" style="background-image: url(src/img/airbus-virgin.png);">
+                        <div class="travel__company-description">
+                            <h3 class="travel__company-description-subtitle">Airline</h3>
+                            <h2 class="travel__company-description-title">Virgin Australia
+                                <img src="src/img/virgin.svg" alt="company-Virgin-Australia">
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="travel__slider-info">
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Destination</h3>
+                            <h2 class="travel__slider-info-title">Queensland Australia</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Distance</h3>
+                            <h2 class="travel__slider-info-title">7,065 Miles</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Travel Time</h3>
+                            <h2 class="travel__slider-info-title">23 Hours 5 Minutes</h2>
+                        </div>
+
+                        <div class="travel__slider-info-items">
+                            <h3 class="travel__slider-info-subtitle">Pricing</h3>
+                            <h2 class="travel__slider-info-title">$1,976 USD <span>Round Trip</span></h2>
+                        </div>
+
+                    </div> <!--  .travel__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="travel__slider-btn">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Flight</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .travel__slider-item -->
+
+            </div> <!--  .travel__slider -->
+        </div> <!-- .container -->
+    </section>
+
+
+    <!--  SECTION  SLEEP  -->
+    <section class="sleep" id="sleep">
+        <div class="container">
+
+            <!--  title  sleep -->
+            <div class="all__title-section wow fadeInLeft">
+                <span>sleep
+                    <h3>sleep</h3>
+                </span>
+            </div>
+
+            <!--   sleep  slider  -->
+            <div class="sleep__slider">
+
+                <!--   sleep  slider  item  1  -->
+                <div class="sleep__slider-item">
+                    <div class="sleep__slider-item-head" style="background-image: url(src/img/sleep-img.png);">
+
+                        <!--  subtitle  sleep   -->
+                        <div class="surf__subtitle wow fadeInRight" data-wow-offset="200">
+                            <h3 class="headline-left">Resorts</h3>
+                            <h2 class="surf__subtitle-location">Auberge<span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .sleep__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="sleep__slider-description wow fadeInUp" style="background-image: url(src/img/gamak.png);" data-wow-offset="200">
+                        <div class="sleep__company-description">
+                            <h3 class="sleep__company-description-subtitle">Rating</h3>
+                            <h2 class="sleep__company-description-title">Excellent
+                                <ul class="sleep__star-list">
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                </ul>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="sleep__slider-info">
+
+                        <div class="sleep__slider-info-items wow fadeInUp" data-wow-delay=".2s" data-wow-offset="150">
+                            <h3 class="sleep__slider-info-subtitle">Resort</h3>
+                            <h2 class="sleep__slider-info-title">Auberge Australia</h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items wow fadeInUp" data-wow-delay=".4s" data-wow-offset="150">
+                            <h3 class="sleep__slider-info-subtitle"># of nights</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__night" type="number" min="1" max="9" step="1" value="5">
+                                </div>
+                                Nights
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items wow fadeInUp" data-wow-delay=".6s" data-wow-offset="150">
+                            <h3 class="sleep__slider-info-subtitle"># of guests</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__guest" type="number" min="1" max="9" step="1" value="4">
+                                </div>
+                                Guests
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items wow fadeInUp" data-wow-delay=".8s" data-wow-offset="150">
+                            <h3 class="sleep__slider-info-subtitle">Pricing</h3>
+                            <h2 class="sleep__slider-info-title"><span class="sleep__slider-info-price" data-nights="55"
+                                    data-guests="25"></span> USD<span>Per Night</span></h2>
+                        </div>
+
+                    </div> <!--  .sleep__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="sleep__slider-btn wow fadeInUp" data-wow-offset="150">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Stay</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .sleep__slider-item -->
+
+                <!--   sleep  slider  item  2  -->
+                <div class="sleep__slider-item">
+                    <div class="sleep__slider-item-head" style="background-image: url(src/img/sleep-img.png);">
+
+                        <!--  subtitle  sleep   -->
+                        <div class="surf__subtitle">
+                            <h3 class="headline-left">Resorts</h3>
+                            <h2 class="surf__subtitle-location">Auberge<span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .sleep__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="sleep__slider-description" style="background-image: url(src/img/gamak.png);">
+                        <div class="sleep__company-description">
+                            <h3 class="sleep__company-description-subtitle">Rating</h3>
+                            <h2 class="sleep__company-description-title">Excellent
+                                <ul class="sleep__star-list">
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                </ul>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="sleep__slider-info">
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle">Resort</h3>
+                            <h2 class="sleep__slider-info-title">Auberge Australia</h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle"># of nights</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__night" type="number" min="1" max="9" step="1" value="5">
+                                </div>
+                                Nights
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle"># of guests</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__guest" type="number" min="1" max="9" step="1" value="4">
+                                </div>
+                                Guests
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle">Pricing</h3>
+                            <h2 class="sleep__slider-info-title"><span class="sleep__slider-info-price" data-nights="55"
+                                    data-guests="25"></span> USD<span>Per Night</span></h2>
+                        </div>
+
+                    </div> <!--  .sleep__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="sleep__slider-btn">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Stay</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .sleep__slider-item -->
+
+
+                <!--   sleep  slider  item  3  -->
+                <div class="sleep__slider-item">
+                    <div class="sleep__slider-item-head" style="background-image: url(src/img/sleep-img.png);">
+
+                        <!--  subtitle  sleep   -->
+                        <div class="surf__subtitle">
+                            <h3 class="headline-left">Resorts</h3>
+                            <h2 class="surf__subtitle-location">Auberge<span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .sleep__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="sleep__slider-description" style="background-image: url(src/img/gamak.png);">
+                        <div class="sleep__company-description">
+                            <h3 class="sleep__company-description-subtitle">Rating</h3>
+                            <h2 class="sleep__company-description-title">Excellent
+                                <ul class="sleep__star-list">
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                </ul>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="sleep__slider-info">
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle">Resort</h3>
+                            <h2 class="sleep__slider-info-title">Auberge Australia</h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle"># of nights</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__night" type="number" min="1" max="9" step="1" value="5">
+                                </div>
+                                Nights
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle"># of guests</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__guest" type="number" min="1" max="9" step="1" value="4">
+                                </div>
+                                Guests
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle">Pricing</h3>
+                            <h2 class="sleep__slider-info-title"><span class="sleep__slider-info-price" data-nights="55"
+                                    data-guests="25"></span> USD<span>Per Night</span></h2>
+                        </div>
+
+                    </div> <!--  .sleep__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="sleep__slider-btn">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Stay</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .sleep__slider-item -->
+
+                <!--   sleep  slider  item  4  -->
+                <div class="sleep__slider-item">
+                    <div class="sleep__slider-item-head" style="background-image: url(src/img/sleep-img.png);">
+
+                        <!--  subtitle  sleep   -->
+                        <div class="surf__subtitle">
+                            <h3 class="headline-left">Resorts</h3>
+                            <h2 class="surf__subtitle-location">Auberge<span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .sleep__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="sleep__slider-description" style="background-image: url(src/img/gamak.png);">
+                        <div class="sleep__company-description">
+                            <h3 class="sleep__company-description-subtitle">Rating</h3>
+                            <h2 class="sleep__company-description-title">Excellent
+                                <ul class="sleep__star-list">
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                </ul>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="sleep__slider-info">
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle">Resort</h3>
+                            <h2 class="sleep__slider-info-title">Auberge Australia</h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle"># of nights</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__night" type="number" min="1" max="9" step="1" value="5">
+                                </div>
+                                Nights
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle"># of guests</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__guest" type="number" min="1" max="9" step="1" value="4">
+                                </div>
+                                Guests
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle">Pricing</h3>
+                            <h2 class="sleep__slider-info-title"><span class="sleep__slider-info-price" data-nights="55"
+                                    data-guests="25"></span> USD<span>Per Night</span></h2>
+                        </div>
+
+                    </div> <!--  .sleep__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="sleep__slider-btn">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Stay</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .sleep__slider-item -->
+
+                <!--   sleep  slider  item  5  -->
+                <div class="sleep__slider-item">
+                    <div class="sleep__slider-item-head" style="background-image: url(src/img/sleep-img.png);">
+
+                        <!--  subtitle  sleep   -->
+                        <div class="surf__subtitle">
+                            <h3 class="headline-left">Resorts</h3>
+                            <h2 class="surf__subtitle-location">Auberge<span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .sleep__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="sleep__slider-description" style="background-image: url(src/img/gamak.png);">
+                        <div class="sleep__company-description">
+                            <h3 class="sleep__company-description-subtitle">Rating</h3>
+                            <h2 class="sleep__company-description-title">Excellent
+                                <ul class="sleep__star-list">
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                </ul>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="sleep__slider-info">
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle">Resort</h3>
+                            <h2 class="sleep__slider-info-title">Auberge Australia</h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle"># of nights</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__night" type="number" min="1" max="9" step="1" value="5">
+                                </div>
+                                Nights
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle"># of guests</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__guest" type="number" min="1" max="9" step="1" value="4">
+                                </div>
+                                Guests
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle">Pricing</h3>
+                            <h2 class="sleep__slider-info-title"><span class="sleep__slider-info-price" data-nights="55"
+                                    data-guests="25"></span> USD<span>Per Night</span></h2>
+                        </div>
+
+                    </div> <!--  .sleep__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="sleep__slider-btn">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Stay</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .sleep__slider-item -->
+
+                <!--   sleep  slider  item  6  -->
+                <div class="sleep__slider-item">
+                    <div class="sleep__slider-item-head" style="background-image: url(src/img/sleep-img.png);">
+
+                        <!--  subtitle  sleep   -->
+                        <div class="surf__subtitle">
+                            <h3 class="headline-left">Resorts</h3>
+                            <h2 class="surf__subtitle-location">Auberge<span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .sleep__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="sleep__slider-description" style="background-image: url(src/img/gamak.png);">
+                        <div class="sleep__company-description">
+                            <h3 class="sleep__company-description-subtitle">Rating</h3>
+                            <h2 class="sleep__company-description-title">Excellent
+                                <ul class="sleep__star-list">
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                </ul>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="sleep__slider-info">
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle">Resort</h3>
+                            <h2 class="sleep__slider-info-title">Auberge Australia</h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle"># of nights</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__night" type="number" min="1" max="9" step="1" value="5">
+                                </div>
+                                Nights
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle"># of guests</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__guest" type="number" min="1" max="9" step="1" value="4">
+                                </div>
+                                Guests
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle">Pricing</h3>
+                            <h2 class="sleep__slider-info-title"><span class="sleep__slider-info-price" data-nights="55"
+                                    data-guests="25"></span> USD<span>Per Night</span></h2>
+                        </div>
+
+                    </div> <!--  .sleep__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="sleep__slider-btn">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Stay</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .sleep__slider-item -->
+
+                <!--   sleep  slider  item  7  -->
+                <div class="sleep__slider-item">
+                    <div class="sleep__slider-item-head" style="background-image: url(src/img/sleep-img.png);">
+
+                        <!--  subtitle  sleep   -->
+                        <div class="surf__subtitle">
+                            <h3 class="headline-left">Resorts</h3>
+                            <h2 class="surf__subtitle-location">Auberge<span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .sleep__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="sleep__slider-description" style="background-image: url(src/img/gamak.png);">
+                        <div class="sleep__company-description">
+                            <h3 class="sleep__company-description-subtitle">Rating</h3>
+                            <h2 class="sleep__company-description-title">Excellent
+                                <ul class="sleep__star-list">
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                </ul>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="sleep__slider-info">
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle">Resort</h3>
+                            <h2 class="sleep__slider-info-title">Auberge Australia</h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle"># of nights</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__night" type="number" min="1" max="9" step="1" value="5">
+                                </div>
+                                Nights
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle"># of guests</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__guest" type="number" min="1" max="9" step="1" value="4">
+                                </div>
+                                Guests
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle">Pricing</h3>
+                            <h2 class="sleep__slider-info-title"><span class="sleep__slider-info-price" data-nights="55"
+                                    data-guests="25"></span> USD<span>Per Night</span></h2>
+                        </div>
+
+                    </div> <!--  .sleep__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="sleep__slider-btn">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Stay</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .sleep__slider-item -->
+
+                <!--   sleep  slider  item  8  -->
+                <div class="sleep__slider-item">
+                    <div class="sleep__slider-item-head" style="background-image: url(src/img/sleep-img.png);">
+
+                        <!--  subtitle  sleep   -->
+                        <div class="surf__subtitle">
+                            <h3 class="headline-left">Resorts</h3>
+                            <h2 class="surf__subtitle-location">Auberge<span>|</span> Australia</h2>
+                        </div>
+                    </div> <!-- .sleep__slider-item-head -->
+
+                    <!-- block bottom description -->
+                    <div class="sleep__slider-description" style="background-image: url(src/img/gamak.png);">
+                        <div class="sleep__company-description">
+                            <h3 class="sleep__company-description-subtitle">Rating</h3>
+                            <h2 class="sleep__company-description-title">Excellent
+                                <ul class="sleep__star-list">
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                </ul>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--  block  company  information  -->
+                    <div class="sleep__slider-info">
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle">Resort</h3>
+                            <h2 class="sleep__slider-info-title">Auberge Australia</h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle"># of nights</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__night" type="number" min="1" max="9" step="1" value="5">
+                                </div>
+                                Nights
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle"># of guests</h3>
+                            <h2 class="sleep__slider-info-title">
+                                <div class="quantity">
+                                    <input class="input__guest" type="number" min="1" max="9" step="1" value="4">
+                                </div>
+                                Guests
+                            </h2>
+                        </div>
+
+                        <div class="sleep__slider-info-items">
+                            <h3 class="sleep__slider-info-subtitle">Pricing</h3>
+                            <h2 class="sleep__slider-info-title"><span class="sleep__slider-info-price" data-nights="55"
+                                    data-guests="25"></span> USD<span>Per Night</span></h2>
+                        </div>
+
+                    </div> <!--  .sleep__slider-info  -->
+
+                    <!-- btn -->
+                    <div class="sleep__slider-btn">
+                        <div class="surf__box-inner-btn">
+                            <a href="#" class="btn">Book
+                                <span>Stay</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--  .sleep__slider-item -->
+
+            </div> <!--  .sleep__slider -->
+
+        </div> <!-- .container -->
+    </section>
+
+
+    <!--  SECTION  SHOP  -->
+    <section class="shop" id="shop">
+        <div class="container">
+
+            <!--  title  shop -->
+            <div class="all__title-section wow fadeInLeft">
+                <span>shop
+                    <h3>shop</h3>
+                </span>
+            </div>
+
+            <!--  SHOP  SLIDER   -->
+            <div class="shop__slider">
+
+                <!-- shop slider item 1 -->
+                <div class="shop__slider-item">
+                    <div class="shop__slider-inner">
+
+                        <!--  slider  info -->
+                        <div class="shop__slider-inner-info wow fadeInLeft" data-wow-offset="150">
+
+                            <div class="shop__slider-inner-info-description">
+                                <h3 class="shop__slider-inner-info-description-subtitle">Style</h3>
+                                <h2 class="shop__slider-inner-info-description-title">North Nugget TT Surfboard</h2>
+                            </div>
+
+                            <div class="shop__slider-inner-price">
+                                <ul class="shop__slider-inner-price-list">
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                </ul>
+                                <p>$799<sup>99</sup></p>
+                            </div>
+
+                            <!-- btn -->
+                            <div class="shop__slider-inner-btn">
+                                <div class="surf__box-inner-btn">
+                                    <a href="#" class="btn">Drop
+                                        <span>In</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  slider  content -->
+                        <div class="shop__slider-inner-content wow fadeInUp" data-wow-offset="150">
+
+                            <div class="shop__slider-inner-content-surfboard">
+                                <img src="src/img/surfboard.png" alt="surfboard">
+
+                                <div class="shop__slider-surfboard-box surfboard-box-1">
+                                    <div class="shop__slider-surfboard-box-circle">
+                                        <div class="shop__slider-surfboard-box-circle-row"></div>
+                                        <div class="shop__slider-surfboard-box-circle-row"></div>
+                                    </div>
+                                    <div class="shop__slider-surfboard-box-content">
+                                        Double Concave with Vee Shape low point
+                                    </div>
+                                </div>
+
+                                <div class="shop__slider-surfboard-box surfboard-box-2">
+                                    <div class="shop__slider-surfboard-box-circle">
+                                        <div class="shop__slider-surfboard-box-circle-row"></div>
+                                        <div class="shop__slider-surfboard-box-circle-row"></div>
+                                    </div>
+                                    <div class="shop__slider-surfboard-box-content">
+                                        Double Concave with Vee Shape low point
+                                    </div>
+                                </div>
+
+                                <div class="shop__slider-surfboard-box surfboard-box-3">
+                                    <div class="shop__slider-surfboard-box-circle">
+                                        <div class="shop__slider-surfboard-box-circle-row"></div>
+                                        <div class="shop__slider-surfboard-box-circle-row"></div>
+                                    </div>
+                                    <div class="shop__slider-surfboard-box-content">
+                                        Double Concave with Vee Shape low point
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shop__slider-inner-content-box">
+                                <div class="shop__slider-inner-content-extra">
+                                    <h2>Extras</h2>
+                                </div>
+
+                                <div class="shop__slider-inner-content-box-items">
+                                    <div class="shop__slider-inner-content-box-item">
+                                        <div class="shop__slider-inner-content-box-img">
+                                            <img src="src/img/wax.png" alt="wax">
+                                        </div>
+
+                                        <h3 class="shop__slider-inner-content-name">Sex Wax</h3>
+                                        <p class="shop__slider-inner-content-price">$24.99</p>
+                                    </div>
+
+                                    <div class="shop__slider-inner-content-box-item">
+                                        <div class="shop__slider-inner-content-box-img">
+                                            <img src="src/img/bracelet.png" alt="bracelet">
+                                        </div>
+
+                                        <h3 class="shop__slider-inner-content-name">Pura Vida</h3>
+                                        <p class="shop__slider-inner-content-price">$27.99</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- shop slider item 2 -->
+                <div class="shop__slider-item">
+                    <div class="shop__slider-inner">
+
+                        <!--  slider  info -->
+                        <div class="shop__slider-inner-info">
+
+                            <div class="shop__slider-inner-info-description">
+                                <h3 class="shop__slider-inner-info-description-subtitle">Style</h3>
+                                <h2 class="shop__slider-inner-info-description-title">North Nugget TT Surfboard</h2>
+                            </div>
+
+                            <div class="shop__slider-inner-price">
+                                <ul class="shop__slider-inner-price-list">
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                    <li><img src="src/img/star.svg" alt="star"></li>
+                                </ul>
+                                <p>$799<sup>99</sup></p>
+                            </div>
+
+                            <!-- btn -->
+                            <div class="shop__slider-inner-btn">
+                                <div class="surf__box-inner-btn">
+                                    <a href="#" class="btn">Drop
+                                        <span>In</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  slider  content -->
+                        <div class="shop__slider-inner-content">
+
+                            <div class="shop__slider-inner-content-surfboard">
+                                <img src="src/img/surfboard.png" alt="surfboard">
+
+                                <div class="shop__slider-surfboard-box surfboard-box-1">
+                                    <div class="shop__slider-surfboard-box-circle">
+                                        <div class="shop__slider-surfboard-box-circle-row"></div>
+                                        <div class="shop__slider-surfboard-box-circle-row"></div>
+                                    </div>
+                                    <div class="shop__slider-surfboard-box-content">
+                                        Double Concave with Vee Shape low point
+                                    </div>
+                                </div>
+
+                                <div class="shop__slider-surfboard-box surfboard-box-2">
+                                    <div class="shop__slider-surfboard-box-circle">
+                                        <div class="shop__slider-surfboard-box-circle-row"></div>
+                                        <div class="shop__slider-surfboard-box-circle-row"></div>
+                                    </div>
+                                    <div class="shop__slider-surfboard-box-content">
+                                        Double Concave with Vee Shape low point
+                                    </div>
+                                </div>
+
+                                <div class="shop__slider-surfboard-box surfboard-box-3">
+                                    <div class="shop__slider-surfboard-box-circle">
+                                        <div class="shop__slider-surfboard-box-circle-row"></div>
+                                        <div class="shop__slider-surfboard-box-circle-row"></div>
+                                    </div>
+                                    <div class="shop__slider-surfboard-box-content">
+                                        Double Concave with Vee Shape low point
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shop__slider-inner-content-box">
+                                <div class="shop__slider-inner-content-extra">
+                                    <h2>Extras</h2>
+                                </div>
+
+                                <div class="shop__slider-inner-content-box-items">
+                                    <div class="shop__slider-inner-content-box-item">
+                                        <div class="shop__slider-inner-content-box-img">
+                                            <img src="src/img/wax.png" alt="wax">
+                                        </div>
+
+                                        <h3 class="shop__slider-inner-content-name">Sex Wax</h3>
+                                        <p class="shop__slider-inner-content-price">$24.99</p>
+                                    </div>
+
+                                    <div class="shop__slider-inner-content-box-item">
+                                        <div class="shop__slider-inner-content-box-img">
+                                            <img src="src/img/bracelet.png" alt="bracelet">
+                                        </div>
+
+                                        <h3 class="shop__slider-inner-content-name">Pura Vida</h3>
+                                        <p class="shop__slider-inner-content-price">$27.99</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- .container -->
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer"> 
+        <!-- btn -->
+        <div class="footer__btn wow fadeInUp" data-wow-offset="20">
+            <div class="surf__box-inner-btn">
+                <a href="#" class="btn">Go
+                    <span>Surf</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer__copy">
+            &copy; Go-Surf 2018. All Rights Reserved.
+        </div>
+    </footer>
+
+
+    <script src="build/js/all.js"></script>
 </body>
 </html>
