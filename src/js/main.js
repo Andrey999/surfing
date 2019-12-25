@@ -1,8 +1,23 @@
 window.onload = function () {
-  // burger  mobile  menu
+/////////////////////  SECTION   HEADER  ////////////////////////////
+
+  //////////////////  burger  mobile  menu  ////////////////////////
   $('.menu__burger').click(function() {
     $('.menu').toggleClass('active');
+    $('.menu__burger-line:first-child').toggleClass('transform__line-top');
+    $('.menu__burger-line').eq(1).toggleClass('line__hide');
+    $('.menu__burger-line:last-child').toggleClass('transform__line-bottom');
   });
+
+  //////////////////  header  menu  date  ////////////////////////
+  let dateNumber = document.getElementById('header__day');
+  let dateMonth = document.getElementById('header__month');
+  let dateYear = document.getElementById('header__year');
+
+  let dateNow = new Date();
+  dateNumber.innerHTML = dateNow.getDate();
+  dateMonth.innerHTML = dateNow.getMonth() + 1;
+  dateYear.innerHTML = dateNow.getFullYear();
 
 
   //////////////////  header  slider  ////////////////////////
@@ -21,7 +36,7 @@ window.onload = function () {
   });
 
 
-  //////////////////  section surf  ////////////////////////
+  /////////////////////  SECTION   SURF  ////////////////////////////
   //// slider map
   $('.slider__map').slick({
     slidesToShow: 8,
@@ -53,14 +68,23 @@ window.onload = function () {
           centerMode: true
         }
       },
+      {
+        breakpoint: 460,
+        settings: {
+          slidesToShow: 1,
+          focusOnSelect: false,
+          centerMode: false
+        }
+      },
     ]
   });
 
-
+  
   // surf slider
   $('.surf__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
+    centerMode: false,
     asNavFor: '.slider__map',
     prevArrow: '<img class="slider__arrows slider__arrows-left" src="src/img/arrow-left.svg" alt="arrow-left">',
     nextArrow: '<img class="slider__arrows slider__arrows-right" src="src/img/arrow-right.svg" alt="arrow-right">',
@@ -80,14 +104,24 @@ window.onload = function () {
       {
         breakpoint: 680,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 460,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false
         }
       },
     ]
   });
 
 
-  //////////////////  section travel   ////////////////////////
+
+
+  /////////////////////  SECTION   TRAVEL  ////////////////////////////
   $('.travel__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -96,7 +130,9 @@ window.onload = function () {
   });
 
 
-  //////////////////  section sleep   ////////////////////////
+
+
+  /////////////////////  SECTION   SLEEP  ////////////////////////////
   $('.sleep__slider, .shop__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -107,61 +143,71 @@ window.onload = function () {
   // section sleep block company information
   $('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
   $('.quantity').each(function() {
-    var spinner = $(this),
+    let spinner = $(this),
       input = spinner.find('input[type="number"]'),
       btnUp = spinner.find('.quantity-up'),
       btnDown = spinner.find('.quantity-down'),
       min = input.attr('min'),
-      max = input.attr('max');
+      max = input.attr('max'),
+      newVal;
 
     btnUp.click(function() {
-      var oldValue = parseFloat(input.val());
+      let oldValue = parseFloat(input.val());
       if (oldValue >= max) {
-        var newVal = oldValue;
+        newVal = oldValue;
       } else {
-        var newVal = oldValue + 1;
+        newVal = oldValue + 1;
       }
       spinner.find("input").val(newVal);
       spinner.find("input").trigger("change");
     });
 
     btnDown.click(function() {
-      var oldValue = parseFloat(input.val());
+      let oldValue = parseFloat(input.val());
       if (oldValue <= min) {
-        var newVal = oldValue;
+        newVal = oldValue;
       } else {
-        var newVal = oldValue - 1;
+        newVal = oldValue - 1;
       }
       spinner.find("input").val(newVal);
       spinner.find("input").trigger("change");
     });
-
   });
 
-  let summ;
+function getSum() {
+  let nights = $('.input__night').val() * $('.sleep__slider-info-price').attr('data-nights');
 
-  function getSum() {
-    let nights = $('.input__night').val() * $('.sleep__slider-info-price').attr('data-nights');
-    console.log('nights: ' + nights);
+  let guest = ($('.input__guest').val() - 1) * $('.sleep__slider-info-price').attr('data-guests');
+  let summ = nights + guest;
+  $('.sleep__slider-info-price').html('$' + summ);
+}
+getSum();
 
-    let guest = ($('.input__guest').val() - 1) * $('.sleep__slider-info-price').attr('data-guests');
-    console.log('guest: ' + guest);
+   $('.quantity-button').click(getSum);
 
-    summ = nights + guest;
-    console.log('summ: ' + summ);
 
-    $('.sleep__slider-info-price').html('$' + summ);
-  }
-  getSum();
+  
 
-   $('.quantity-button').click(function() {
-    console.log('getSum: ' + getSum());
-      getSum();
-    });
-
-//////////////////  section shop   ////////////////////////
+/////////////////////  SECTION   SHOP  ////////////////////////////
 $('.shop__slider-surfboard-box-circle').click(function() {
   $(this).toggleClass('active');
 });
-    
+
+
+/////////////////////  SCROLL ANIMATION TO ALL SECTION  ////////////////////////////
+$('a[href^="#"]').on('click', function (event) {
+  event.preventDefault();
+
+  let scroll = $(this).attr("href"), // target link 
+    scrollDown = $(scroll).offset().top; // distance to target link
+  console.log(scrollDown);
+
+  $('html, body').animate({
+    scrollTop: scrollDown
+  }, 1700);
+});
+
+
+//////////////////  PLUGIN  WOW.JS   ////////////////////////
+new WOW().init();
 };
