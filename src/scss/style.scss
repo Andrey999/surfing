@@ -66,8 +66,23 @@ a {
 	&-line {
 		margin-bottom: 5px;
 		height: 3px;
-		background-color: #4AF6CD	; 
+		background-color: #4AF6CD; 
+		transition: all .3s ease;
+
+		&.line__hide {
+			opacity: 0;
+		}
 	}
+}
+
+.transform__line-top {
+	transform: rotate(45deg) translateX(5px) translateY(10px);
+	background-color: #fff;
+}
+
+.transform__line-bottom {
+	transform: rotate(-45deg) translateX(0) translateY(-5px);
+	background-color: #fff;
 }
 
 // left line in all section
