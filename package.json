@@ -28,7 +28,7 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "del": "^3.0.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "normalize.css": "^8.0.0",
     "slick-carousel": "^1.8.1",
     "wow.js": "^1.2.2",
